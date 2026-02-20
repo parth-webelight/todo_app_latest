@@ -42,6 +42,7 @@ class _SpeechToTextDialogState extends State<SpeechToTextDialog> {
 
             TextField(
               maxLines: 4,
+              enabled: false,
               decoration: InputDecoration(
                 hintText: "Start speaking and your text will appear here...",
                 hintStyle: GoogleFonts.poppins(fontSize: 12),

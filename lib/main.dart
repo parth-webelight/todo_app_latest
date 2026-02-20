@@ -3,8 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:todo_app/features/splash_screen.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
+void defultMain() async {
   await Hive.initFlutter();
   await Hive.openBox('todoBox');
   runApp(ProviderScope(child: MyApp()));

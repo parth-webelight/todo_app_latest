@@ -99,12 +99,12 @@ class TodoListScreen extends StatelessWidget {
               child: const Icon(Icons.add, color: Colors.white),
             ),
             closeButtonBuilder: RotateFloatingActionButtonBuilder(
-              backgroundColor: Colors.redAccent,
+              backgroundColor: Colors.indigo.shade200,
               child: const Icon(Icons.close, color: Colors.white),
             ),
             children: [
               _customFab(
-                icon: Icons.add,
+                icon: Icons.edit_note_sharp,
                 label: "Write",
                 color: Colors.indigo,
                 onTap: () async {
@@ -123,9 +123,9 @@ class TodoListScreen extends StatelessWidget {
                 },
               ),
               _customFab(
-                icon: Icons.search,
+                icon: Icons.mic_none,
                 label: "Speech",
-                color: Colors.teal,
+                color: Colors.indigo,
                 onTap: () {
                   showDialog(
                     context: context,

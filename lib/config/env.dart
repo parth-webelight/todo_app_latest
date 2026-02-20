@@ -1,0 +1,21 @@
+import 'package:envied/envied.dart';
+
+part 'env.g.dart';
+
+@Envied()
+abstract class Env {
+  @EnviedField(varName: 'BASE_URL')
+  static const String baseUrl = _Env.baseUrl;
+
+  @EnviedField(varName: 'API_KEY')
+  static const String apiKey = _Env.apiKey;
+
+  @EnviedField(varName: 'PAYMENT_KEY')
+  static const String paymentKey = _Env.paymentKey;
+
+  @EnviedField(varName: 'APP_NAME')
+  static const String appName = _Env.appName;
+
+  @EnviedField(varName: 'ENABLE_LOGGING')
+  static const String enableLogging = _Env.enableLogging;
+}
